@@ -1,0 +1,7 @@
+p = input('Dgite_algo: ')
+print(f'o formato do {p} é', type(p))
+print('Só tem espaços? ', p.isspace())
+print('Tem somente numero? ', p.isnumeric())
+print('Tem somente letras? ', p.isalpha())
+print('Tem numeros e letras? ', p.isalnum())
+print(f'Só tem espaços? {p.isspace()} ')

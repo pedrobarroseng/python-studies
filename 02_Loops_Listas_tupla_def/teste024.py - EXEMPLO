@@ -1,0 +1,26 @@
+class Carro:
+    # __init__ é o CONSTRUTOR. É a função que roda assim que o carro nasce.
+    # self significa "EU MESMO". É como o carro sabe que a cor é DELE.
+    def __init__(self, marca, modelo, cor):
+        self.marca = marca    # A marca DESTE carro recebe a marca informada
+        self.modelo = modelo
+        self.cor = cor
+        self.ligado = False   # Todo carro nasce desligado
+
+    def ligar(self):
+        self.ligado = True
+        print(f'O {self.modelo} ligou! Vrummm 🚗')
+
+# --- USANDO O MOLDE ---
+
+# Criando o Objeto 1 (Instanciando)
+meu_carro = Carro("Fiat", "Uno", "Prata")
+
+# Criando o Objeto 2
+carro_da_mae = Carro("Honda", "Civic", "Preto")
+
+# Acessando dados
+print(f"Meu carro é um {meu_carro.modelo} e a cor é {meu_carro.cor}")
+
+# Usando uma ação (Método)
+meu_carro.ligar()
