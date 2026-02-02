@@ -1,5 +1,6 @@
 import os
 
+
 nome_arquivo = 'Tabela.csv'
 
 if os.path.exists(nome_arquivo) == False:
